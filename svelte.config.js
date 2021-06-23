@@ -1,13 +1,14 @@
 import sveltePreprocess from 'svelte-preprocess';
 import path from 'path';
 
+const production = !process.env.ROLLUP_WATCH;
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	preprocess: sveltePreprocess({
-		includePaths: ['src'],
+		sourceMap: !production,
 	}),
 	kit: {
-		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
 		vite: {
 			resolve: {

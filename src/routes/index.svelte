@@ -1,9 +1,13 @@
 <script>
-  // SCSS
-  import '$src/index.scss';
-
-  // Components
-  import Test from '$lib/Test.svelte';
+  import '$src/scss/index.scss';
 </script>
 
-<Test />
+<div class="app">
+  <hgroup>
+    <h1>Website Starter Kit</h1>
+    <h2>Svelte edition</h2>
+  </hgroup>
+  <p>
+    A simple Svelte boilerplate.
+  </p>
+</div>

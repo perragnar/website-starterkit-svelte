@@ -1,38 +1,60 @@
-# create-svelte
+# Website Starter Kit (Svelte edition)
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+A simple Svelte boilerplate with SCSS.
 
-## Creating a project
+## Requirements
 
-If you're seeing this, you've probably already done this step. Congrats!
+- [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/)
+- [Git](https://git-scm.com/)
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+## Instructions
 
-# create a new project in my-app
-npm init svelte@next my-app
+### Step 1: Create a new project folder
+
+Create the new site folder where ever you want on your computer and `cd` into it.
+
+### Step 2: Initialize a new Git repository
+
+Instead of cloning this repository, create an empty one locally.
+
+```
+git init
 ```
 
-> Note: the `@next` is temporary
+Then pull this repository into your newly created one.
 
-## Developing
+```
+git pull git@github.com:perragnar/website-starterkit-svelte.git
+```
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Step 3: Install the Node packages
 
-```bash
+All the required packages needs to be installed.
+
+```
+npm install
+```
+
+### Step 4: Build and serve
+
+In the package.json file there are two scripts defined. One for running a dev server with browser sync, and the other is to build the site for deployment.
+
+To run the develop server:
+
+```
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+To run the develop server and host it on the local network:
 
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
+```
+npm run dev
+```
 
-```bash
+To build the site for deployment:
+
+```
 npm run build
 ```
 
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+**Happy hacking!**
